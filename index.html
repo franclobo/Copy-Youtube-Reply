@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="mycode" href="mycode.js">
+    <script>
+        var visible = false;
+        function iniciar() {
+            var elemento = document.getElementById("menu-img");
+            elemento.addEventListener("click", mostrarMenu);
+        }
+        function mostrarMenu() {
+            var elemento = document.getElementById("menuprincipal");
+            if (!visible) {
+                elemento.style.display = "flex";
+                visible = true;
+            } else {
+                elemento.style.display = "none";
+                visible = false;
+            }
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+    <title>Youtube</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav id="menuicono">
+        <img src="iconomenu.png" width="35" height="28" id="menu-img" alt="iconomenu">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul>
+                <li>Principal</li>
+                <li>Explorar</li>
+                <li>Shorts</li>
+                <li>Suscripciones</li>
+                <li>Biblioteca</li>
+                <li>Historial</li>
+                <li>Tus videos</li>
+                <li>Tus películas</li>
+                <li>Ver más tarde</li>
+                <li>Mostrar más</li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <section>
+            <form name="formulario" method="get" action="procesar.php">
+
+                <p><label>Buscar: <input type="search" name="buscar" placeholder="Término a buscar"></label></p>
+                <p><input type="submit" value="Buscar"></p>
+
+
+            </form>
+        </section>
+        <section>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HkziUyqIZuA"
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+            <div>
+                <h2>Mr.Trance en "Amor Trance, parte II". Capítulo 14. Episodio completo. 1ª temporada</h2>
+            </div>
+            <div>
+                <section>
+                    <h3>Mr. Trance</h3>
+                    <small>27,207 visitas...</small>
+                    <small>197 K suscriptores</small>
+                </section>
+            </div>
+            <div>
+                <p>Tras un desafortunado accidente, @Mr.Trance consigue contactar con la mujer que
+                    le ha enamorado pero las circunstancias no se lo ponen nada fácil para conquistarla.
+                    No olvides suscribirte! 💜 YEEESSSSSSSSSSSSSSS! 🕺🏻
+                </p>
+
+            </div>
+        </section>
+        <aside>
+            <ul>
+                <li>Mr. Trance en "Amor Trance, parte I". Capítulo 13</li>
+                <li>Episodios completos Mr. Trance</li>
+                <li>Mix: Mr. Trance</li>
+            </ul>
+
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

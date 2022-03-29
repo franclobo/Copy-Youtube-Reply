@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+section p {
+  float: left;
+  width: 50%;
+}
+
+div p {
+  float: left;
+  width: 100%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+#menuicono {
+  display: none;
+  width: 95%;
+  height: 38px;
+  padding: 12px 2% 0 3%;
+}
+
+#menuprincipal {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  height: 50px;
+  padding: 0% 2%;
+}
+
+#menuprincipal li {
+  display: inline-block;
+  height: 35px;
+  padding: 15px 10px 0 10px;
+  margin-right: 5px;
+}
+
+#menuprincipal li:hover {
+  background-color: #6facc6;
+}
